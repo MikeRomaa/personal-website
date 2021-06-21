@@ -18,6 +18,22 @@ anime({
     delay: 600,
 })
 
+anime({
+    targets: '#intro',
+    opacity: [0, 1],
+    easing: 'easeOutSine',
+    duration: 1000,
+})
+
+inView('#projects').once('enter', () => {
+    anime({
+        targets: '#projects',
+        opacity: [0, 1],
+        easing: 'easeOutSine',
+        duration: 1000,
+    })
+})
+
 inView('#houston').once('enter', () => {
     anime({
         targets: '#houston',
@@ -52,6 +68,15 @@ inView('#arctex').once('enter', () => {
 })
 
 inView('#experience').once('enter', () => {
+    anime({
+        targets: '#experience',
+        opacity: [0, 1],
+        easing: 'easeOutSine',
+        duration: 1000,
+    })
+})
+
+inView('#experience-list').once('enter', () => {
     anime({
         targets: '.experience',
         translateX: [-100, 0],

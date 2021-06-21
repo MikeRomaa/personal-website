@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Michael Romashov // Full-Stack Developer</title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="#f8c046" name="theme-color"/>
+        <meta content="I'm a software engineer from NYC who is passionate about creating aesthetic, intuitive, and powerful web applications. When I create software, I strive for simplicity and elegance, and above all else, quality. I specialize in creating feature-rich backends to support the operational needs of modern websites and have lots of experience in working with REST APIs and databases." name="description"/>
+        <meta property="og:title" content="Michael Romashov // Full-Stack Developer"/>
+        <meta property="og:description" content="I'm a software engineer from NYC who is passionate about creating aesthetic, intuitive, and powerful web applications. When I create software, I strive for simplicity and elegance, and above all else, quality. I specialize in creating feature-rich backends to support the operational needs of modern websites and have lots of experience in working with REST APIs and databases." />
+        <meta property="og:image" content="./img/profile.jpg"/>
         <link rel="stylesheet" href="./css/romashov.css">
+        <link rel="shortcut icon" type="icon" type="image/x-icon" href="./img/favicon.ico">
+        <title>Michael Romashov // Full-Stack Developer</title>
     </head>
     <body>
         <div id="scroll">
@@ -49,14 +57,18 @@
                     </div>
                     <img src="./img/profile.jpg" id="header-img"/>
                 </div>
-                <p>Hey there, I'm Michael!</p>
-                <p>I'm a software engineer from NYC who is passionate about creating aesthetic, intuitive, and powerful web applications. When I create software, I strive for simplicity and elegance, and above all else, quality. I specialize in creating feature-rich backends to support the operational needs of modern websites and have lots of experience in working with REST APIs and databases.</p>
-                <p>If you have a project that you would like to collaborate on or commission, you can always contact me via email at <b><a href="mailto:mromashov@icloud.com">mromashov@icloud.com</a></b> or via direct message on LinkedIn or <b>Discord (MikeRoma#7468)</b>.</p>
-                <h4>
-                    <a href="https://bths-math-website.vercel.app" target="_blank" class="project-link">Download Resume</a>
-                </h4>
-                <h1 class="header text-yellow">Projects</h1>
-                <h4 class="subheader">What I've been working on.</h4>
+                <div id="intro" style="opacity: 0;">
+                    <p>Hey there, I'm Michael!</p>
+                    <p>I'm a software engineer from NYC who is passionate about creating aesthetic, intuitive, and powerful web applications. When I create software, I strive for simplicity, elegance, and above all else, quality. I specialize in creating feature-rich backends to support the operational needs of modern websites and have lots of experience in working with REST APIs and databases.</p>
+                    <p>If you have a project that you would like to collaborate on or commission, you can always contact me via email at <b><a href="mailto:mromashov@icloud.com">mromashov@icloud.com</a></b> or via direct message on <b><a href="https://www.linkedin.com/in/michael-romashov-08554a19b" target="_blank">LinkedIn</a></b> or <b>Discord (MikeRoma#7468)</b>.</p>
+                    <h4>
+                        <a href="./doc/Resume.pdf" target="_blank" class="project-link">Download Resume</a>
+                    </h4>
+                </div>
+                <div id="projects" style="opacity: 0;">
+                    <h1 class="header text-yellow">Projects</h1>
+                    <h4 class="subheader">What I've been working on</h4>
+                </div>
                 <div class="project" id="houston" style="opacity: 0;">
                     <div class="project-desc">
                         <h3>
@@ -91,27 +103,30 @@
                     </div>
                     <img src="./img/arctex.png" class="project-img"/>
                 </div>
-                <h1 class="header text-yellow">Experience</h1>
-                <h4 class="subheader">Wonderful people I've worked with.</h4>
-                <div id="experience">
-                    <div class="experience">
+                
+                <div id="experience" style="opacity: 0;">
+                    <h1 class="header text-yellow">Experience</h1>
+                    <h4 class="subheader">Wonderful people I've worked with</h4>
+                </div>
+                <div id="experience-list">
+                    <div class="experience" style="opacity: 0;">
                         <h3 class="position">Developer <small class="text-yellow">@ VATSIM</small></h3>
                         <p>Jun 2021 - Present</p>
                     </div>
-                    <div class="experience">
+                    <div class="experience" style="opacity: 0;">
                         <h3 class="position">Developer <small class="text-yellow">@ Synaptic Simulations</small></h3>
                         <p>Apr 2021 - Present</p>
                     </div>
-                    <div class="experience">
+                    <div class="experience" style="opacity: 0;">
                         <h3 class="position">Webmaster <small class="text-yellow">@ Virtual Houston ARTCC</small></h3>
                         <p>May 2020 - Present</p>
                     </div>
-                    <div class="experience">
+                    <div class="experience" style="opacity: 0;">
                         <h3 class="position">Programmer <small class="text-yellow">@ FIRST Robotics Team 334</small></h3>
                         <p>Jan 2020 - Present</p>
                     </div>
-                    <div class="experience">
-                        <h3 class="position">Full-Stack Enginner Intern <small class="text-yellow">@ Pupil Corporation</small></h3>
+                    <div class="experience" style="opacity: 0;">
+                        <h3 class="position">Full-Stack Engineer Intern <small class="text-yellow">@ Pupil Corporation</small></h3>
                         <p>Dec 2020 - Apr 2021</p>
                     </div>
                 </div>
@@ -123,7 +138,6 @@
         <script src="./js/anime.min.js"></script>
         <script src="./js/inview.min.js"></script>
         <script src="./js/animations.js"></script>
-        <!-- <script src="./js/scroll.js"></script> -->
         <script src="./js/cursor.js"></script>
     </body>
 </html>
