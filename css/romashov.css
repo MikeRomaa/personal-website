@@ -1,0 +1,201 @@
+/* Fonts */
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Souvenir';
+    src: url('../fonts/Souvenir-MediumItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Global Styles */
+html, body {
+    color: #231f20;
+    margin: 0;
+    background-color: white;
+}
+body {
+    font: 400 18px 'Jost', sans-serif;
+    letter-spacing: 0.05em;
+}
+body, body * {
+    cursor: none;
+}
+b {
+    font-weight: 900;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+small {
+    font-size: 0.75em;
+}
+.header {
+    font-family: Souvenir, serif;
+    font-size: 45px;
+    position: relative;
+    margin-bottom: -20px;
+    margin-top: 110px;
+}
+.header:before {
+    content: '\2015';
+    margin-right: 10px;
+    color: inherit;
+}
+.subheader {
+    font-family: Souvenir, serif;
+    margin-left: 55px;
+    margin-bottom: 60px;
+}
+.text-yellow {
+    color: #f8c046;
+}
+.badge {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.badge-navy {
+    color: #334D6E;
+    background-color:#334D6E1a;
+}
+.badge-purple {
+    color: #DE2155;
+    background-color:#DE21551a;
+}
+.badge-teal {
+    color: #3C9ABA;
+    background-color:#3C9ABA1a;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+::selection {
+    background-color: #ffdc9b6b;
+}
+
+/* Homepage */
+#scroll {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 60%;
+    max-width: 1300px;
+    left: 0;
+    right: 0;
+    margin: 4% auto;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 15px 40px 5px rgba(207, 207, 214, 0.25);
+    margin-left: 30px;
+}
+#title {
+    font-family: Souvenir, serif;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+#socials {
+    display: flex;
+    align-items: center;
+    margin-bottom: -20px;
+}
+.social {
+    text-decoration: none;
+    margin-right: 20px;
+}
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.project-desc {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.project-img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 5px 15px 80px 2px rgba(173, 173, 187, 0.15);
+}
+.project-link {
+    position: relative;
+}
+.project-link:after {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    background-image: url('../icons/arrow-up-right.svg');
+    background-size: cover;
+    transition: top 300ms ease-in-out, right 300ms ease-in-out;
+    top: -7px;
+    right: -23px;
+}
+.project-link:hover:after {
+    top: -12px;
+    right: -28px;
+}
+.position {
+    margin-bottom: -15px;
+}
+
+/* Cursor */
+.cursor-dot, .cursor-dot-outline {
+    pointer-events: none;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.cursor-dot {
+    width: 7px;
+    height: 7px;
+    background-color: #ffffff;
+    mix-blend-mode: difference;
+    z-index: 100;
+}
+.cursor-dot-outline {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(100, 100, 100, 0.4);
+    z-index: 99;
+}
+@media (hover: none) {
+    .cursor-dot, .cursor-dot-outline {
+        display: none!important;
+    }
+}
+  
