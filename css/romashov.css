@@ -45,7 +45,7 @@ small {
     font-size: 0.75em;
 }
 .header {
-    font-family: Souvenir, serif;
+    font-family: 'Souvenir', serif;
     font-size: 45px;
     position: relative;
     margin-bottom: -20px;
@@ -57,7 +57,7 @@ small {
     color: inherit;
 }
 .subheader {
-    font-family: Souvenir, serif;
+    font-family: 'Souvenir', serif;
     margin-left: 55px;
     margin-bottom: 60px;
 }
@@ -99,7 +99,8 @@ small {
     max-width: 1300px;
     left: 0;
     right: 0;
-    margin: 4% auto;
+    margin: 0 auto;
+    padding: 4% 0;
 }
 #header {
     display: flex;
@@ -113,7 +114,7 @@ small {
     margin-left: 30px;
 }
 #title {
-    font-family: Souvenir, serif;
+    font-family: 'Souvenir', serif;
     margin-top: 15px;
     margin-bottom: 30px;
 }
