@@ -16,7 +16,7 @@
 }
 @font-face {
     font-family: 'Souvenir';
-    src: url('../fonts/Souvenir-MediumItalic.woff2') format('woff2');
+    src: url('../fonts/Souvenir-MediumItalic.otf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
