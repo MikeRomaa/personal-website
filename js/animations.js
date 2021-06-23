@@ -1,7 +1,16 @@
 inView.threshold(0.1)
 
 anime({
-    targets: '.cls-1',
+    targets: '#name-desktop .cls-1',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1200,
+    delay: function(el, i) { return i * 200 },
+    direction: 'left',
+})
+
+anime({
+    targets: '#name-mobile .cls-1',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutSine',
     duration: 1200,

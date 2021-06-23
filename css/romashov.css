@@ -26,6 +26,7 @@ html, body {
     color: #231f20;
     margin: 0;
     background-color: white;
+    scrollbar-width: 0;
 }
 body {
     font: 400 18px 'Jost', sans-serif;
@@ -43,6 +44,7 @@ a {
 }
 small {
     font-size: 0.75em;
+    font-weight: 400
 }
 .header {
     font-family: 'Souvenir', serif;
@@ -69,6 +71,9 @@ small {
     font-weight: 500;
     padding: 5px 20px;
     border-radius: 20px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 7px;
 }
 .badge-navy {
     color: #334D6E;
@@ -81,6 +86,9 @@ small {
 .badge-teal {
     color: #3C9ABA;
     background-color:#3C9ABA1a;
+}
+.flex-reverse {
+    flex-direction: row-reverse;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -107,11 +115,21 @@ small {
     align-items: center;
     justify-content: space-between;
 }
+#name-desktop {
+    display: block;
+}
+#name-mobile {
+    display: none;
+}
+#header-name {
+    flex-grow: 1;
+    padding-right: 5%;
+}
 #header-img {
     width: 300px;
+    max-width: 100%;
     border-radius: 50%;
     box-shadow: 5px 15px 40px 5px rgba(207, 207, 214, 0.25);
-    margin-left: 30px;
 }
 #title {
     font-family: 'Souvenir', serif;
@@ -199,4 +217,55 @@ small {
         display: none!important;
     }
 }
-  
+
+/* Mobile Compatability */
+@media (max-width: 1300px) {
+    .container {
+        width: 75%;
+    }
+    #header {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 10% 0;
+    }
+    #header-name {
+        padding-right: 0;
+    }
+    #header-img {
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+    #name-desktop {
+        display: none;
+    }
+    #name-mobile {
+        display: block;
+        margin-bottom: 20px;
+    }
+    #title {
+        margin-bottom: 15px;
+    }
+    #socials {
+        justify-content: center;
+    }
+    #intro p {
+        margin-bottom: 30px;
+    }
+    .header:before {
+        display: none;
+    }
+    .subheader {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .project {
+        flex-direction: column-reverse;
+    }
+    .project-desc, .project-img {
+        width: 100%;
+    }
+    .position small {
+        display: block;
+    }
+}
