@@ -74,6 +74,10 @@ small {
     margin-top: 0;
     margin-bottom: 7px;
 }
+.badge-gray {
+    color: #383838;
+    background-color:#3838381a;
+}
 .badge-navy {
     color: #334D6E;
     background-color:#334D6E1a;
